@@ -1,0 +1,52 @@
+* /* Configurações Gerais */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajuste para o Navbar não cobrir o conteúdo por ser fixed-top */
+body {
+    padding-top: 70px;
+}
+
+/* Imagem de Fundo da Home */
+#home {
+    background: url('https://img.freepik.com/fotos-premium/fotografia-completa-do-campo-de-estrelas_1048944-30360917.jpg?semt=ais_hybrid&w=740&q=80') center/cover no-repeat;
+    height: 90vh; /* Ocupa 90% da altura da tela */
+    width: 100%;
+}
+
+#home h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Estilos do Modo Claro (Padrão) */
+body.light-mode {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Estilos do Modo Escuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Ajustes específicos para o Modo Escuro */
+body.dark-mode .card, 
+body.dark-mode .bg-body-tertiary {
+    background-color: #1e1e1e !important; /* Cartões mais escuros */
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #555;
+}
+
+body.dark-mode table {
+    color: white;
+}
